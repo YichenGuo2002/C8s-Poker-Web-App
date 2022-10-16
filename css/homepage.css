@@ -1,0 +1,82 @@
+html
+{
+    height: 100%;
+    font-family: 'Lora', serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color:hwb(258 60% 3% / 0.150);
+}
+
+#logo{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 10px;
+}
+
+nav{
+    background-color:hwb(258 32% 5% / 0.250);
+}
+
+.nav2{
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#login{
+    font-family: 'Lora', serif;
+    font-size:1rem;
+    font-weight:bold;
+    padding: 1rem;
+}
+
+.nav3{
+    position: absolute;
+    right: 20px;
+}
+
+#music-player-button{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width:4%;
+    opacity:40%;
+}
+
+footer{
+    background-color:hwb(258 32% 5% / 0.250);
+    margin:auto;
+    text-align: center;
+    width: 100%;
+    position:relative;
+    bottom:0;
+}
+
+.footer-text{
+    color:rgba(0, 0, 255, 100%);
+    padding:30px;
+    text-align: center;
+}
+
+.main-game{
+    align-items:center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+a{
+    color:blue;
+    text-decoration-color:rgba(0, 0, 255, 40%);
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color:rgba(0, 0, 255, 100%);
+}

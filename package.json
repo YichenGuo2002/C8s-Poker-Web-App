@@ -1,0 +1,41 @@
+{
+  "name": "homework01-yichenguo2002",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "YichenGuo2002  \r Homework #01 - Crazy Eights",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "http-server",
+    "devStart" : "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0467-001-002-fall-2022/homework01-YichenGuo2002.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0467-001-002-fall-2022/homework01-YichenGuo2002/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0467-001-002-fall-2022/homework01-YichenGuo2002#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.23.1",
+    "eslint-plugin-mocha": "^10.1.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "clear": "^0.1.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "http-server": "^14.1.1",
+    "readline-sync": "^1.4.10"
+  }
+}

@@ -1,0 +1,91 @@
+<!Doctype>
+<html>
+    <head>
+        <title>
+        Crazy Eights Web Game
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet"  href="css/homepage.css">
+
+    </head>
+
+<body>
+
+<audio loop id = "music-player">
+<source src="audio/monkeys-spinning-monkeys.mp3" type="audio/mp3">
+</audio>
+ 
+
+<div class="white">
+    
+    <nav>
+        <div class = "nav1">
+            <img src = "img/crazy-eight-logo.png" alt = "Crazy Eight logo" id = "logo"/>
+            <img src = "img/play-button.png" alt = "Music player" id = "music-player-button"/>
+        </div>
+        <div class = "nav2">
+            <div><a href="/"><h3>Go play game</h3></a> </div>
+            <div><a href="/rules"> <h3>Learn about rules</h3></a> </div>
+            <div><h3><a href="https://yichenguo.com">Who made it</a></h3></div>
+            <button id = "login">Log in</button>
+        </div>
+
+    <hr />
+    </nav>
+
+    <section class = "main-game">
+        <button id = "start">Start</button>
+        <p>
+            CRAZY 8s<br>
+            -----------------------------------------------<br>
+            Next suit/rank to play: ➡️ <p id = "next-play"></p>  ⬅️<br>
+            -----------------------------------------------<br>
+            Top of discard pile: <br>
+            Number of cards left in deck: <br>
+            -----------------------------------------------<br>
+            🤖✋ (computer hand): <br>
+            😊✋ (player hand): <br>
+            -----------------------------------------------<br>
+        </p>
+    </section>
+    
+    <footer>
+    <hr style = "margin:0; padding:0;" />
+    <h4 class="footer-text">
+        Thank you for playing!<br><br>
+        Creator: <a href="https://yichenguo.com">Yichen Guo</a><br><br>
+        Lastest update in 2022
+    </h4>
+    <hr />
+    </footer>
+
+</div>
+
+<script>
+    let music_player = document.getElementById('music-player');
+    let music_player_button = document.getElementById('music-player-button');
+    music_player_button.onclick = () => {
+        if(music_player.paused){
+            music_player.play();
+            music_player_button.src = "img/stop-button.png";
+        }
+        else{
+            music_player.pause();
+            music_player_button.src = "img/play-button.png";
+        }
+    };
+    let login = document.getElementById('login');
+    login.onclick = () =>{
+        window.location.href="/login";
+    };
+
+</script>
+<script type="module" src="bin/game.js"></script>
+
+</body>
+</html>
